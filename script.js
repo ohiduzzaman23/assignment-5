@@ -2,6 +2,15 @@ function getElement(id) {
   const element = document.getElementById(id);
   return element;
 }
+// Heart Button
+const heartButtons = document.getElementsByClassName("heart-button");
+for (let heartButton of heartButtons) {
+  heartButton.addEventListener("click", function () {
+    const heart = getElement("total-heart").innerText;
+    const totalHeart = Number(heart) + 1;
+    getElement("total-heart").innerText = totalHeart;
+  });
+}
 // Copy Button
 const copyButtons = document.getElementsByClassName("copy-button");
 for (let copyButton of copyButtons) {
