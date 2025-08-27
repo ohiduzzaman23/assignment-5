@@ -24,17 +24,29 @@ for (let callButton of callButtons) {
     const serviceNumber =
       callButton.parentNode.parentNode.children[3].innerText;
 
+    // Local Time
+    const data = new Date().toLocaleTimeString("en-US", {
+      hour: "numeric",
+      minute: "numeric",
+      second: "numeric",
+      hour12: true,
+    });
     //   Added Card Container
     const cardContainer = getElement("card-container");
+
     const newCard = document.createElement("div");
-    newCard.innerHTML = `<div class="history bg-[#FAFAFA] m-3 p-4">
+    newCard.innerHTML = `<div class="history bg-[#FAFAFA] m-3 p-4 flex justify-between items-center">
               <div class="history-content">
                 <h1>${serviceTitle}</h1>
                 <p>${serviceNumber}</p>
               </div>
-              <div class="time"></div>
+              <div id="time" class="">${data}</div>
             </div>`;
 
     cardContainer.append(newCard);
   });
 }
+
+document.getElementById("clear-button").addEventListener("click", function () {
+  getElement("card-container").innerText = "";
+});
