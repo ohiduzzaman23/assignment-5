@@ -20,6 +20,14 @@ for (let copyButton of copyButtons) {
     // Service Number
     const serviceNumber =
       copyButton.parentNode.parentNode.children[3].innerText;
+    // Number copy function
+    navigator.clipboard.writeText(serviceNumber).then(() => {
+      alert(serviceTitle + " নম্বর কপি হয়েছে " + serviceNumber);
+    });
+
+    const copyHistory = getElement("total-copy").innerText;
+    const totalCopy = Number(copyHistory) + 1;
+    getElement("total-copy").innerText = totalCopy;
   });
 }
 
@@ -29,9 +37,22 @@ for (let callButton of callButtons) {
   callButton.addEventListener("click", function () {
     // Service Title
     const serviceTitle = callButton.parentNode.parentNode.children[1].innerText;
+
     // Service Number
     const serviceNumber =
       callButton.parentNode.parentNode.children[3].innerText;
+
+    const availableCoin = getElement("total-coin").innerText;
+
+    // Call Alert Function
+    if (availableCoin <= 0) {
+      alert("আপনার পর্যপ্ত কয়েন নেই। কল করতে কমপক্ষে ২০ কয়েন লাগবে।");
+      return;
+    } else {
+      alert("Calling " + serviceTitle + " " + serviceNumber + "...");
+    }
+    const totalCoin = availableCoin - 20;
+    getElement("total-coin").innerText = totalCoin;
 
     // Local Time
     const data = new Date().toLocaleTimeString("en-US", {
