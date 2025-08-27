@@ -63,9 +63,9 @@
     </header>
     <main class="bg-[#f5fff6] mt-8">
       <section class="grid grid-cols-12 w-11/12 gap-5 mx-auto">
-        <div class="col-span-9 flex gap-5 flex-wrap">
+        <div class="col-span-9 flex gap-5 flex-wrap h-200">
           <!-- Card-1 -->
-          <div class="card bg-white w-76 rounded-2xl p-4 shadow">
+          <div class="card bg-white w-76 h-65 rounded-2xl p-4 shadow">
             <div class="flex justify-between items-center">
               <img
                 src="./assets/emergency.png"
@@ -75,9 +75,11 @@
               <i class="fa-regular fa-heart text-xl"></i>
             </div>
 
-            <h1 class="font-bold mt-2 text-lg">জাতীয় জরুরি সেবা</h1>
+            <h1 id="service-title" class="font-bold mt-2 text-lg">
+              জাতীয় জরুরি সেবা
+            </h1>
             <h2 class="text-gray-500 text-sm">National Emergency</h2>
-            <p class="font-bold text-3xl mt-3">999</p>
+            <p id="service-number" class="font-bold text-3xl mt-3">999</p>
             <span
               class="bg-[#f2f2f2] text-sm rounded-2xl px-3 my-1 inline-block w-20"
               >সর্বজনীন</span
@@ -98,7 +100,7 @@
             </div>
           </div>
           <!-- Card-2 -->
-          <div class="card bg-white w-76 rounded-2xl p-4 shadow">
+          <div class="card bg-white w-76 h-65 rounded-2xl p-4 shadow">
             <div class="flex justify-between items-center">
               <img
                 src="./assets/police.png"
@@ -131,7 +133,7 @@
             </div>
           </div>
           <!-- Card-3 -->
-          <div class="card bg-white w-76 rounded-2xl p-4 shadow">
+          <div class="card bg-white w-76 h-65 rounded-2xl p-4 shadow">
             <div class="flex justify-between items-center">
               <img
                 src="./assets/fire-service.png"
@@ -164,7 +166,7 @@
             </div>
           </div>
           <!-- Card-4 -->
-          <div class="card bg-white w-76 rounded-2xl p-4 shadow">
+          <div class="card bg-white w-76 h-65 rounded-2xl p-4 shadow">
             <div class="flex justify-between items-center">
               <img
                 src="./assets/emergency.png"
@@ -197,7 +199,7 @@
             </div>
           </div>
           <!-- Card-5 -->
-          <div class="card bg-white w-76 rounded-2xl p-4 shadow">
+          <div class="card bg-white w-76 h-65 rounded-2xl p-4 shadow">
             <div class="flex justify-between items-center">
               <img
                 src="./assets/emergency.png"
@@ -230,7 +232,7 @@
             </div>
           </div>
           <!-- Card-6 -->
-          <div class="card bg-white w-76 rounded-2xl p-4 shadow">
+          <div class="card bg-white w-76 h-65 rounded-2xl p-4 shadow">
             <div class="flex justify-between items-center">
               <img
                 src="./assets/emergency.png"
@@ -263,7 +265,7 @@
             </div>
           </div>
           <!-- Card-7 -->
-          <div class="card bg-white w-76 rounded-2xl p-4 shadow">
+          <div class="card bg-white w-76 h-65 rounded-2xl p-4 shadow">
             <div class="flex justify-between items-center">
               <img
                 src="./assets/emergency.png"
@@ -296,7 +298,7 @@
             </div>
           </div>
           <!-- Card-8 -->
-          <div class="card bg-white w-76 rounded-2xl p-4 shadow">
+          <div class="card bg-white w-76 h-65 rounded-2xl p-4 shadow">
             <div class="flex justify-between items-center">
               <img
                 src="./assets/brac.png"
@@ -329,7 +331,7 @@
             </div>
           </div>
           <!-- Card-9 -->
-          <div class="card bg-white w-76 rounded-2xl p-4 shadow">
+          <div class="card bg-white w-76 h-65 rounded-2xl p-4 shadow">
             <div class="flex justify-between items-center">
               <img
                 src="./assets/Bangladesh-Railway.png"
@@ -362,7 +364,19 @@
             </div>
           </div>
         </div>
-        <div class="border-2 border-blue-500 col-span-3">sidbar</div>
+
+        <!-- Aside Section -->
+        <div class="col-span-3 bg-white rounded-xl shadow">
+          <section id="card-container">
+            <!-- <div class="history bg-[#FAFAFA] m-3 p-4">
+              <div class="history-content">
+                <h1>জাতীয় জরুরি সেবা</h1>
+                <p>999</p>
+              </div>
+              <div class="time"></div>
+            </div> -->
+          </section>
+        </div>
       </section>
     </main>
     <script src="./script.js"></script>
