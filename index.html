@@ -24,7 +24,7 @@
   </head>
   <body class="max-w-[1440px] mx-auto">
     <header class="">
-      <nav class="flex justify-between mx-[50px] my-[20px]">
+      <nav class="flex justify-between w-11/12 mx-auto py-4">
         <div class="">
           <div class="flex">
             <img src="./assets/logo.png" alt="" class="w-[50px]" />
@@ -35,14 +35,14 @@
         </div>
         <div>
           <!-- heart button -->
-          <button class="btn bg-[#ECFFF0] rounded-2xl">
+          <button class="btn bg-[#ECFFF0] rounded-2xl border-none px-6">
             <p id="total-heart">0</p>
-            <img src="./assets/heart.png" alt="" class="w-[15px]" />
+            <img src="./assets/heart.png" alt="" class="w-[20px]" />
           </button>
           <!-- coin button -->
-          <button class="btn bg-[#ECFFF0] rounded-2xl">
-            <p id="total-coin">200</p>
-            <img src="./assets/coin.png" alt="" class="w-[15px]" />
+          <button class="btn bg-[#ECFFF0] rounded-2xl border-none mx-3 px-6">
+            <p id="total-coin">100</p>
+            <img src="./assets/coin.png" alt="" class="w-[20px]" />
           </button>
           <!-- copy button -->
           <button class="btn bg-[#00a63e] text-white rounded-2xl">
@@ -72,7 +72,7 @@
         <section class="lg:col-span-9">
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             <!-- Card-1 -->
-            <div class="card bg-white rounded-2xl p-4 shadow">
+            <div class="card bg-white rounded-2xl p-4 shadow inline-block">
               <div class="flex justify-between items-center">
                 <img
                   src="./assets/emergency.png"
@@ -86,10 +86,12 @@
                 জাতীয় জরুরি সেবা
               </h1>
               <h2 class="text-gray-500 text-sm">National Emergency</h2>
-              <p id="service-number" class="font-bold text-3xl mt-3">999</p>
-              <span class="bg-[#f2f2f2] text-sm rounded-2xl px-3 my-1 w-20"
-                >সর্বজনীন</span
+              <p id="service-number" class="font-bold text-3xl my-3">999</p>
+              <span
+                class="bg-[#f2f2f2] text-[#5C5C5C] text-sm rounded-2xl px-3 py-1"
               >
+                সর্বজনীন
+              </span>
               <div class="my-3 flex gap-2">
                 <button
                   class="text-gray-500 flex items-center gap-1 border px-3 py-1 rounded-lg text-sm w-full justify-center cursor-pointer hover:bg-[#D2D2D2] hover:border-none duration-[0.3s] copy-button"
@@ -106,7 +108,7 @@
               </div>
             </div>
             <!-- Card-2 -->
-            <div class="card bg-white rounded-2xl p-4 shadow">
+            <div class="card bg-white rounded-2xl p-4 shadow inline-block">
               <div class="flex justify-between items-center">
                 <img
                   src="./assets/police.png"
@@ -118,9 +120,9 @@
 
               <h1 class="font-bold mt-2 text-lg">পুলিশ</h1>
               <h2 class="text-gray-500 text-sm">Police</h2>
-              <p class="font-bold text-3xl mt-3">999</p>
+              <p class="font-bold text-3xl my-3">999</p>
               <span
-                class="bg-[#f2f2f2] text-sm rounded-2xl px-3 my-1 inline-block w-20"
+                class="bg-[#f2f2f2] text-[#5C5C5C] text-sm rounded-2xl px-3 py-1"
                 >পুলিশ</span
               >
               <div class="my-3 flex gap-2">
@@ -139,7 +141,7 @@
               </div>
             </div>
             <!-- Card-3 -->
-            <div class="card bg-white rounded-2xl p-4 shadow">
+            <div class="card bg-white rounded-2xl p-4 shadow inline-block">
               <div class="flex justify-between items-center">
                 <img
                   src="./assets/fire-service.png"
@@ -151,9 +153,9 @@
 
               <h1 class="font-bold mt-2 text-lg">ফায়ার সার্ভিস</h1>
               <h2 class="text-gray-500 text-sm">Fire Service</h2>
-              <p class="font-bold text-3xl mt-3">999</p>
+              <p class="font-bold text-3xl my-3">999</p>
               <span
-                class="bg-[#f2f2f2] text-sm rounded-2xl px-3 my-1 inline-block w-20"
+                class="bg-[#f2f2f2] text-[#5C5C5C] text-sm rounded-2xl px-3 py-1"
                 >ফায়ার</span
               >
               <div class="my-3 flex gap-2">
@@ -172,10 +174,10 @@
               </div>
             </div>
             <!-- Card-4 -->
-            <div class="card bg-white rounded-2xl p-4 shadow">
+            <div class="card bg-white rounded-2xl p-4 shadow inline-block">
               <div class="flex justify-between items-center">
                 <img
-                  src="./assets/emergency.png"
+                  src="./assets/ambulance.png"
                   alt=""
                   class="w-10 bg-[#FFE3E2] p-2 rounded-xl"
                 />
@@ -184,9 +186,9 @@
 
               <h1 class="font-bold mt-2 text-lg">অ্যাম্বুলেন্স</h1>
               <h2 class="text-gray-500 text-sm">Ambulance</h2>
-              <p class="font-bold text-3xl mt-3">1994-999999</p>
+              <p class="font-bold text-3xl my-3">1994-999999</p>
               <span
-                class="bg-[#f2f2f2] text-sm rounded-2xl px-3 my-1 inline-block w-20"
+                class="bg-[#f2f2f2] text-[#5C5C5C] text-sm rounded-2xl px-3 py-1"
                 >স্বাস্থ্য</span
               >
               <div class="my-3 flex gap-2">
@@ -205,7 +207,7 @@
               </div>
             </div>
             <!-- Card-5 -->
-            <div class="card bg-white rounded-2xl p-4 shadow">
+            <div class="card bg-white rounded-2xl p-4 shadow inline-block">
               <div class="flex justify-between items-center">
                 <img
                   src="./assets/emergency.png"
@@ -217,9 +219,9 @@
 
               <h1 class="font-bold mt-2 text-lg">নারী ও শিশু সহায়তা</h1>
               <h2 class="text-gray-500 text-sm">Women & Child Helpline</h2>
-              <p class="font-bold text-3xl mt-3">109</p>
+              <p class="font-bold text-3xl my-3">109</p>
               <span
-                class="bg-[#f2f2f2] text-sm rounded-2xl px-3 my-1 inline-block w-20"
+                class="bg-[#f2f2f2] text-[#5C5C5C] text-sm rounded-2xl px-3 py-1"
                 >সভায়তা</span
               >
               <div class="my-3 flex gap-2">
@@ -238,7 +240,7 @@
               </div>
             </div>
             <!-- Card-6 -->
-            <div class="card bg-white rounded-2xl p-4 shadow">
+            <div class="card bg-white rounded-2xl p-4 shadow inline-block">
               <div class="flex justify-between items-center">
                 <img
                   src="./assets/emergency.png"
@@ -250,9 +252,9 @@
 
               <h1 class="font-bold mt-2 text-lg">দুদক</h1>
               <h2 class="text-gray-500 text-sm">Anti-Corruption</h2>
-              <p class="font-bold text-3xl mt-3">106</p>
+              <p class="font-bold text-3xl my-3">106</p>
               <span
-                class="bg-[#f2f2f2] text-sm rounded-2xl px-3 my-1 inline-block w-20"
+                class="bg-[#f2f2f2] text-[#5C5C5C] text-sm rounded-2xl px-3 py-1"
                 >সরকারি</span
               >
               <div class="my-3 flex gap-2">
@@ -271,7 +273,7 @@
               </div>
             </div>
             <!-- Card-7 -->
-            <div class="card bg-white rounded-2xl p-4 shadow">
+            <div class="card bg-white rounded-2xl p-4 shadow inline-block">
               <div class="flex justify-between items-center">
                 <img
                   src="./assets/emergency.png"
@@ -283,9 +285,9 @@
 
               <h1 class="font-bold mt-2 text-lg">বিদ্যুৎ বিভ্রাট</h1>
               <h2 class="text-gray-500 text-sm">Electricity Outage</h2>
-              <p class="font-bold text-3xl mt-3">16216</p>
+              <p class="font-bold text-3xl my-3">16216</p>
               <span
-                class="bg-[#f2f2f2] text-sm rounded-2xl px-3 my-1 inline-block w-20"
+                class="bg-[#f2f2f2] text-[#5C5C5C] text-sm rounded-2xl px-3 py-1"
                 >বিদ্যুৎ</span
               >
               <div class="my-3 flex gap-2">
@@ -304,7 +306,7 @@
               </div>
             </div>
             <!-- Card-8 -->
-            <div class="card bg-white rounded-2xl p-4 shadow">
+            <div class="card bg-white rounded-2xl p-4 shadow inline-block">
               <div class="flex justify-between items-center">
                 <img
                   src="./assets/brac.png"
@@ -316,9 +318,9 @@
 
               <h1 class="font-bold mt-2 text-lg">ব্র্যাক</h1>
               <h2 class="text-gray-500 text-sm">Brac</h2>
-              <p class="font-bold text-3xl mt-3">16445</p>
+              <p class="font-bold text-3xl my-3">16445</p>
               <span
-                class="bg-[#f2f2f2] text-sm rounded-2xl px-3 my-1 inline-block w-20"
+                class="bg-[#f2f2f2] text-[#5C5C5C] text-sm rounded-2xl px-3 py-1"
                 >এনজিও</span
               >
               <div class="my-3 flex gap-2">
@@ -337,7 +339,7 @@
               </div>
             </div>
             <!-- Card-9 -->
-            <div class="card bg-white rounded-2xl p-4 shadow">
+            <div class="card bg-white rounded-2xl p-4 shadow inline-block">
               <div class="flex justify-between items-center">
                 <img
                   src="./assets/Bangladesh-Railway.png"
@@ -349,9 +351,9 @@
 
               <h1 class="font-bold mt-2 text-lg">বাংলাদেশ রেলওয়ে</h1>
               <h2 class="text-gray-500 text-sm">Bangladesh Railway</h2>
-              <p class="font-bold text-3xl mt-3">163</p>
+              <p class="font-bold text-3xl my-3">163</p>
               <span
-                class="bg-[#f2f2f2] text-sm rounded-2xl px-3 my-1 inline-block w-20"
+                class="bg-[#f2f2f2] text-[#5C5C5C] text-sm rounded-2xl px-3 py-1"
                 >পরিবহন</span
               >
               <div class="my-3 flex gap-2">
@@ -371,13 +373,14 @@
             </div>
           </div>
         </section>
+
         <!-- Aside Section -->
         <div class="lg:col-span-3 bg-white rounded-xl shadow">
           <div class="flex justify-between items-center m-3 p-4">
             <h1 class="font-bold">Call History</h1>
             <button
               id="clear-button"
-              class="btn bg-[#00A63E] text-white rounded-3xl"
+              class="btn bg-[#00A63E] text-white rounded-3xl hover:bg-[#D2D2D2] duration-[0.3s]"
             >
               Clear
             </button>

@@ -22,7 +22,7 @@ for (let copyButton of copyButtons) {
       copyButton.parentNode.parentNode.children[3].innerText;
     // Number copy function
     navigator.clipboard.writeText(serviceNumber).then(() => {
-      alert(serviceTitle + " নম্বর কপি হয়েছে " + serviceNumber);
+      alert(serviceTitle + " নম্বর কপি হয়েছে: " + serviceNumber);
     });
 
     const copyHistory = getElement("total-copy").innerText;
@@ -65,7 +65,7 @@ for (let callButton of callButtons) {
     const cardContainer = getElement("card-container");
 
     const newCard = document.createElement("div");
-    newCard.innerHTML = `<div class="history bg-[#FAFAFA] m-3 p-4 flex justify-between items-center">
+    newCard.innerHTML = `<div class="history bg-[#FAFAFA] m-3 p-4 flex justify-between items-center rounded-[8px]">
               <div class="history-content">
                 <h1>${serviceTitle}</h1>
                 <p>${serviceNumber}</p>
