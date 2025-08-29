@@ -44,12 +44,16 @@ for (let callButton of callButtons) {
 
     const availableCoin = getElement("total-coin").innerText;
 
+    const callingEmoji = getElement("calling-emoji").innerHTML;
+
     // Call Alert Function
     if (availableCoin <= 0) {
       alert("আপনার পর্যপ্ত কয়েন নেই। কল করতে কমপক্ষে ২০ কয়েন লাগবে।");
       return;
     } else {
-      alert("Calling " + serviceTitle + " " + serviceNumber + "...");
+      alert(
+        callingEmoji + "Calling " + serviceTitle + " " + serviceNumber + "..."
+      );
     }
     const totalCoin = availableCoin - 20;
     getElement("total-coin").innerText = totalCoin;
